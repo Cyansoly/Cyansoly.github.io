@@ -4,11 +4,11 @@ var _PageHeight = document.documentElement.clientHeight,
 var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
     _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
 //在页面未加载完毕之前显示的loading Html自定义内容
-var _LoadingHtml = <div class="row cf" >
-    <div class="span">
-        <div class="square"></div>
-    </div>
-</div>
+var _LoadingHtml = new_element=document.createElement("link");
+new_element.setAttribute("rel","stylesheet");
+new_element.setAttribute("type","text/css");
+new_element.setAttribute("href","cyansoly.css");
+document.body.appendChild(new_element);
 //呈现loading效果
 document.write(_LoadingHtml);
 window.onload = function () {
