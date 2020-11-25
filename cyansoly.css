@@ -1,10 +1,10 @@
-.cf:before,
-.cf:after {
+.loading:before,
+.loading:after {
     content: " ";
     display: table;
 }
 
-.cf:after {
+.loading:after {
     clear: both;
 }
 
@@ -39,7 +39,7 @@ html {
     margin: 0 auto;
 }
 
-.row {
+.loading {
     text-align: center;
     padding: 50px 0;
 }
@@ -177,4 +177,10 @@ html {
     100% {
         box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
     }
+}
+.progress {
+    margin: auto;
+    position: relative;
+    left: -60px;
+    top: -2px;
 }
