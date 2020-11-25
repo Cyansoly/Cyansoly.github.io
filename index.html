@@ -13,10 +13,8 @@
 
     <title>？</title>
     <script>
-        function hidediv() 
-        {
+        function hidediv() {
             document.getElementById('loading').style.display = 'none';
-            onload = hidediv()
         }
     </script>
     <link rel="stylesheet" href="cyansoly.css">
@@ -30,13 +28,16 @@
 
 </head>
 
-<body>
+<body onload="hidediv()">
 
     <div class="row cf" id="loading">
         <div class="span">
             <div class="square"></div>
         </div>
     </div>
+</body>
+
+<body>
     <section class="header14 cid-se99MY5lg2 mbr-fullscreen" id="header14-n">
         <div class="container">
             <div class="row justify-content-center align-items-center">
