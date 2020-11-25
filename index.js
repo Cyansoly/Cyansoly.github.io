@@ -81,3 +81,6 @@ function random (n) {
     return n
   }
 }
+if (document.readyState === 'complete') {
+  
+}
