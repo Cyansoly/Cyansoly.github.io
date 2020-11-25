@@ -12,8 +12,13 @@
 
 
     <title>？</title>
-    <script src="index.js"></script>
-    <script src="cyansoly.js"></script>
+    <script>
+        function hidediv() 
+        {
+            document.getElementById('loading').style.display = 'none';
+            onload = hidediv()
+        }
+    </script>
     <link rel="stylesheet" href="cyansoly.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -26,13 +31,11 @@
 </head>
 
 <body>
-    <div class="row cf" >
+
+    <div class="row cf" id="loading">
         <div class="span">
             <div class="square"></div>
         </div>
-    </div>
-    <div class="loading" id="loading">
-        <div class="progress" id="progress">0%</div>
     </div>
     <section class="header14 cid-se99MY5lg2 mbr-fullscreen" id="header14-n">
         <div class="container">
