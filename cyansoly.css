@@ -178,9 +178,3 @@ html {
         box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
     }
 }
-.progress {
-    margin: auto;
-    position: relative;
-    left: -60px;
-    top: -2px;
-}
