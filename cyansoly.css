@@ -65,19 +65,19 @@ html {
     border: 1px rgba(255, 255, 255, 1) solid;
     margin: 0px auto;
     position: relative;
-    -webkit-animation: fill_color 5s linear infinite;
-    -moz-animation: fill_color 5s linear infinite;
-    animation: fill_color 5s linear infinite;
+    -webkit-animation: fill_color 3s linear infinite;
+    -moz-animation: fill_color 3s linear infinite;
+    animation: fill_color 3s linear infinite;
 }
 
 .square:after {
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     content: "";
     background-color: rgba(255, 255, 255, 1);
-    top: -15px;
-    left: -15px;
+    top: -30px;
+    left: -30px;
     -webkit-animation: square_check 5s ease-in-out infinite;
     -moz-animation: square_check 5s ease-in-out infinite;
     animation: square_check 5s ease-in-out infinite;
@@ -86,7 +86,7 @@ html {
 @-webkit-keyframes square_check {
     25% {
         left: 100px;
-        top: -15px;
+        top: -30px;
     }
 
     50% {
@@ -95,20 +95,20 @@ html {
     }
 
     75% {
-        left: -15px;
+        left: -30px;
         top: 99px;
     }
 
     100% {
-        left: -15px;
-        top: -15px;
+        left: -30px;
+        top: -30px;
     }
 }
 
 @-moz-keyframes square_check {
     25% {
         left: 100px;
-        top: -15px;
+        top: -30px;
     }
 
     50% {
@@ -117,20 +117,20 @@ html {
     }
 
     75% {
-        left: -15px;
+        left: -30px;
         top: 99px;
     }
 
     100% {
-        left: -15px;
-        top: -15px;
+        left: -30px;
+        top: -30px;
     }
 }
 
 @keyframes square_check {
     25% {
         left: 100px;
-        top: -15px;
+        top: -30px;
     }
 
     50% {
@@ -139,13 +139,13 @@ html {
     }
 
     75% {
-        left: -15px;
+        left: -30px;
         top: 99px;
     }
 
     100% {
-        left: -15px;
-        top: -15px;
+        left: -30px;
+        top: -30px;
     }
 }
 
@@ -177,4 +177,10 @@ html {
     100% {
         box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
     }
+}
+.progress {
+    margin: auto;
+    position: relative;
+    left: -60px;
+    top: -2px;
 }
