@@ -1,0 +1,180 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;/*定义body的元素垂直居中*/
+    justify-content: center;/*定义body的里的元素水平居中*/
+}
+
+.content {
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+
+html {
+    color: #fff;
+    background-color: #000;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.row {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.span,
+.span_large {
+    float: left;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.02);
+    height: 100px;
+    vertical-align: middle;
+    border-radius: 1px;
+    margin-right: 100px;
+}
+
+.span:last-child {
+    margin-right: 0px;
+}
+
+.square {
+    width: 95px;
+    height: 95px;
+    border: 1px rgba(255, 255, 255, 1) solid;
+    margin: 0px auto;
+    position: relative;
+    -webkit-animation: fill_color 3s linear infinite;
+    -moz-animation: fill_color 3s linear infinite;
+    animation: fill_color 3s linear infinite;
+}
+
+.square:after {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 1);
+    top: -30px;
+    left: -30px;
+    -webkit-animation: square_check 5s ease-in-out infinite;
+    -moz-animation: square_check 5s ease-in-out infinite;
+    animation: square_check 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes square_check {
+    25% {
+        left: 100px;
+        top: -30px;
+    }
+
+    50% {
+        left: 100px;
+        top: 99px;
+    }
+
+    75% {
+        left: -30px;
+        top: 99px;
+    }
+
+    100% {
+        left: -30px;
+        top: -30px;
+    }
+}
+
+@-moz-keyframes square_check {
+    25% {
+        left: 100px;
+        top: -30px;
+    }
+
+    50% {
+        left: 100px;
+        top: 99px;
+    }
+
+    75% {
+        left: -30px;
+        top: 99px;
+    }
+
+    100% {
+        left: -30px;
+        top: -30px;
+    }
+}
+
+@keyframes square_check {
+    25% {
+        left: 100px;
+        top: -30px;
+    }
+
+    50% {
+        left: 100px;
+        top: 99px;
+    }
+
+    75% {
+        left: -30px;
+        top: 99px;
+    }
+
+    100% {
+        left: -30px;
+        top: -30px;
+    }
+}
+
+@-webkit-keyframes fill_color {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
+
+@-moz-keyframes fill_color {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes fill_color {
+    0% {
+        box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: inset 0px -95px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
